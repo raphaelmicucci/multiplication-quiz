@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card-like">
+            <div id="score">
+                <p id="incorrect">Incorrect: <span>0</span></p>
+                <p id="correct">Correct: <span>0</span></p>
+            </div>
+            <h2><span id="num1">0</span> x <span id="num2">0</span> = </h2>
+            <div class="answer-container">
+                <input type="number" name="answer" id="answer">
+                <button onclick="checkAnswer(num1, num2)" type="submit">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

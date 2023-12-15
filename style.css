@@ -1,0 +1,47 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-like {
+    border: 1px red solid;
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#score {
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    text-align: center;
+    padding: 15px 0px;
+}
+
+#answer {
+    width: 50px;
+    font-size: 20px;
+    height: 50px;
+    padding-left: 3px;
+}
+
+button {
+    height: 40px;
+}
+
+#answer-container {
+    display: inline-flex;
+    align-items: start;
+}
