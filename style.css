@@ -5,15 +5,15 @@
     box-sizing: border-box;
 }
 
-.container {
+#divContainer {
     display: flex;
     height: 95vh;
     justify-content: center;
     align-items: center;
 }
 
-.divCard {
-    border: 1px red solid;
+#divCard {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 200px;
     border-radius: 10px;
     padding: 10px;
@@ -23,6 +23,8 @@
 #divScore {
     display: flex;
     justify-content: space-around;
+    font-size: 10px;
+    font-weight: 700;
 }
 
 h2 {
@@ -44,4 +46,12 @@ button {
 #answer-container {
     display: inline-flex;
     align-items: start;
+}
+
+#incorrect {
+    color: rgb(213, 0, 0);
+}
+
+#correct {
+    color: rgb(1, 187, 1);
 }
