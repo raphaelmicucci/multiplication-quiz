@@ -8,10 +8,14 @@ let num2 = Math.ceil(Math.random()*10);
 nums.push([num1,num2]);
 
 window.onload = init;
-function init(){
+function init() {
     document.getElementById("num1").innerText = nums[nums.length-1][0];
     document.getElementById("num2").innerText = nums[nums.length-1][1];
-}
+    document.getElementById("correct").innerText = correct;
+    document.getElementById("incorrect").innerText = incorrect;
+ }
+
+
 
 const checkAnswer = (nums) => {
     const answer = Number(document.getElementById("answer").value);
@@ -20,6 +24,8 @@ const checkAnswer = (nums) => {
 
     console.log(`Round ${round}: ${nums[round-1][0]} x ${nums[round-1][1]} = ${correctAnswer}`);
     
+    document.getElementById("correct").innerText = correct;
+    document.getElementById("incorrect").innerText = incorrect;
 
     if (round == 10) {
         document.querySelector('button').disabled = true;
