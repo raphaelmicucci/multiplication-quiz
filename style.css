@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.card-like {
+.divCard {
     border: 1px red solid;
     width: 200px;
     border-radius: 10px;
@@ -20,7 +20,7 @@
     text-align: center;
 }
 
-#score {
+#divScore {
     display: flex;
     justify-content: space-around;
 }
